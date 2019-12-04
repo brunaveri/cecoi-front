@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>CECOI Vó Maria Félix  - Cadastro de Matricula</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+      <!-- Sidebar - Brand -->
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+			<i class="fas fa-child"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">CECOI Vó Maria Félix </div>
+      </a>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider my-0">
+
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">
+          <i class="fas fa-fw fa-home"></i>
+          <span>Home</span></a>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Dados
+      </div>
+		
+	 <!-- Nav Item - Convocação Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseConvocacao" aria-expanded="true" aria-controls="collapseConvocacao">
+          <i class="fas fa-fw fa-tty"></i>
+          <span>Convocação</span>
+        </a>
+        <div id="collapseConvocacao" class="collapse" aria-labelledby="headingConvocacao" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="cadastro-convocacao.html"><i class="fas fa-fw fa-pen"></i> Cadastrar</a>
+            <a class="collapse-item" href="pesquisa-convocacao.html"><i class="fas fa-fw fa-search"></i> Pesquisar</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Nav Item - Matricula Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMatricula" aria-expanded="true" aria-controls="collapseMatricula">
+          <i class="fas fa-fw fa-paste"></i>
+          <span>Matricula</span>
+        </a>
+        <div id="collapseMatricula" class="collapse" aria-labelledby="headingMatricula" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="cadastro-matricula.html"><i class="fas fa-fw fa-pen"></i> Cadastrar</a>
+            <a class="collapse-item" href="pesquisa-matricula.html"><i class="fas fa-fw fa-search"></i> Pesquisar</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Nav Item - Anamnese Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAnamnese" aria-expanded="true" aria-controls="collapseAnamnese">
+          <i class="fas fa-fw fa-file"></i>
+          <span>Anamnese</span>
+        </a>
+        <div id="collapseAnamnese" class="collapse" aria-labelledby="headingAnamnese" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="cadastro-anamnese.html"><i class="fas fa-fw fa-pen"></i> Cadastrar</a>
+            <a class="collapse-item" href="pesquisa-anamnese.html"><i class="fas fa-fw fa-search"></i> Pesquisar</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+        Turmas
+      </div>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true" aria-controls="collapsePages">
+          <i class="fas fa-fw fa-graduation-cap"></i>
+          <span>Turmas</span>
+        </a>
+        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <a class="collapse-item" href="cadastro-turmas.html"><i class="fas fa-fw fa-pen"></i> Cadastrar</a>
+            <a class="collapse-item" href="pesquisa-turmas.html"><i class="fas fa-fw fa-search"></i> Pesquisar</a>
+          </div>
+        </div>
+      </li>
+
+     
+
+      
+
+      <!-- Divider -->
+      <hr class="sidebar-divider d-none d-md-block">
+		
+	<!-- Heading -->
+      <div class="sidebar-heading">
+        Sistema
+      </div>
+		
+		<!-- Nav Item - Status -->
+      <li class="nav-item">
+        <a class="nav-link" href="status.html">
+          <i class="fas fa-fw fa-info-circle"></i>
+          <span>Status</span></a>
+      </li>
+		
+		<!-- Nav Item - Cidade -->
+      <li class="nav-item">
+        <a class="nav-link" href="tables.html">
+          <i class="fas fa-fw fa-map-marker"></i>
+          <span>Cidade</span></a>
+      </li>
+
+      <!-- Sidebar Toggler (Sidebar) -->
+      <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      </div>
+
+    </ul>
+    <!-- End of Sidebar -->
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+
+            
+            <!-- Nav Item - Logout -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="sair" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><i class="fas fa-fw fa-sign-out-alt"></i> Sair</span>
+              </a>
+              <!-- Dropdown - Logout -->
+              
+            </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+
+      </div>
+		
+	  <!-- Main Content -->
+       <div class="container-fluid">
+		<div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Cadastro de Matrícula</h1>
+            
+          </div>
+   		
+		<form class="matricula form-row">
+			<div class="col-xl-12 col-md-12">
+              <div class="card border-left-primary">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                      <div class="form-group col-md-12">
+                        <label for="unidadeEscolar">Unidade Escolar</label>
+                        <input type="text" class="form-control" id="unidadeEscolar" placeholder="Ex: ">
+                      </div>
+					  <div class="form-group col-md-6">
+                        <label for="matricula">Nº Matrícula</label>
+                        <input type="text" class="form-control" id="matricula" placeholder="Ex: ">
+                      </div>
+					  <div class="form-group col-md-5 mx-sm-4">
+                        <label for="ra">R.A.</label>
+                        <input type="text" class="form-control" id="ra" placeholder="Ex: ">
+					  </div>                    
+                  </div>
+                </div>
+              </div>
+            </div>
+			
+			<div class="col-xl-12 col-md-12">
+              <div class="card border-left-info">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="form-group col-md-12">
+                          <label for="nomeAluno">Nome do Aluno</label>
+                          <input type="text" class="form-control" id="nomeAluno" placeholder="Ex: ">
+                        </div>	                    
+                      
+						<div class="col-md-2 mb-3">
+						<label for="sexo">Sexo</label>
+                        <div class="form-check">
+						
+                          <input class="form-check-input" type="radio" name="sexo" id="sexoFeminino" value="f">
+                          <label class="form-check-label" for="sexoFeminino">Feminino</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="sexo" id="sexoMasculino" value="m">
+                          <label class="form-check-label" for="sexoMasculino">Masculino</label>
+                        </div>
+                      </div>
+					
+					
+                      <div class="col-md-3 mb-3">
+                        <label for="raca">Raça</label>
+                        <select class="form-control">
+                            <option>Branca</option>
+                            <option>Preta</option>
+                            <option>Parda</option>
+                            <option>Amarela</option>
+                            <option>Indígena</option>
+                            <option>Não declarada</option>
+                        </select>
+                      </div>
+						
+					  <div class="form-group col-md-4  mx-sm-4">
+                          <label for="dtNascimento">Data de Nascimento</label>
+                          <input type="text" class="form-control" id="dtNascimento" placeholder="Ex: DD/MM/AAAA">
+                      </div>
+						
+					  <div class="col-md-2 mb-3">
+						<label for="gemeo">Gêmeo</label>
+                        <div class="form-check">
+						
+                          <input class="form-check-input" type="radio" name="gemeo" id="gemeoSim" value="s">
+                          <label class="form-check-label" for="gemeoSim">Sim</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gemeo" id="gemeoNao" value="n">
+                          <label class="form-check-label" for="gemeoNao">Não</label>
+                        </div>
+                      </div>
+					  
+                      <div class="form-group col-md-12">
+                          <label for="nomeMae">Nome Completo da Mãe</label>
+                          <input type="text" class="form-control" id="nomeMae" placeholder="Ex: ">
+                      </div>
+                      <div class="form-group col-md-5">
+                        <label for="rgMae">RG da Mãe</label>
+                        <input type="text" class="form-control" id="rgMae" placeholder="Ex: ">
+                      </div>
+					  <div class="form-group col-md-6 mx-sm-4">
+                        <label for="cpfMae">CPF da Mãe</label>
+                        <input type="text" class="form-control" id="cpfMae" placeholder="Ex: ">
+					  </div> 
+						
+                       <div class="form-group col-md-12">
+                            <label for="nomePai">Nome Completo do Pai</label>
+                            <input type="text" class="form-control" id="nomePai" placeholder="Ex: ">
+                        </div>
+                        <div class="form-group col-md-5">
+                          <label for="rgPai">RG do Pai</label>
+                          <input type="text" class="form-control" id="rgPai" placeholder="Ex: ">
+                        </div>
+                        <div class="form-group col-md-6 mx-sm-4">
+                          <label for="cpfPai">CPF do Pai</label>
+                          <input type="text" class="form-control" id="cpfPai" placeholder="Ex: ">
+                        </div> 
+						
+						<div class="form-group col-md-4">
+                            <label for="nacionalidade">Nacionalidade</label>
+                            <input type="text" class="form-control" id="nacionalidade" placeholder="Ex: ">
+                        </div>
+                        <div class="form-group col-md-4 mx-sm-4">
+                          <label for="rgAluno">RG do Aluno</label>
+                          <input type="text" class="form-control" id="rgAluno" placeholder="Ex: ">
+                        </div>
+                        <div class="form-group col-md-3">
+                          <label for="dtExpedicaoRG">Data de Expedição</label>
+                          <input type="text" class="form-control" id="dtExpedicaoRG" placeholder="Ex: DD/MM/AAAA">
+                        </div> 
+						
+						<div class="col-md-3 mb-3">
+						<label for="bolsaFamilia">Bolsa Família</label>
+                        <div class="form-check">
+						
+                          <input class="form-check-input" type="radio" name="bolsaFamilia" id="bolsaSim" value="s">
+                          <label class="form-check-label" for="bolsaSim">Sim</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="bolsaFamilia" id="bolsaNao" value="n">
+                          <label class="form-check-label" for="bolsaNao">Não</label>
+                        </div>
+                      </div>
+						
+					  <div class="form-group col-md-2 mx-sm-4">
+                          <label for="nis">NIS</label>
+                          <input type="text" class="form-control" id="nis" placeholder="Ex: ">
+                      </div>
+					  
+                      <div class="form-group col-md-6">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Ex: ">
+                      </div>
+						
+                      <div class="form-group col-md-2">
+                          <label for="cep">CEP</label>
+                          <input type="text" class="form-control" id="cep" placeholder="Ex: 00000-000">
+                      </div>
+                      <div class="col-md-5 mb-3 mx-sm-4">
+                        <label for="cidade">Cidade</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                      </div>
+					  <div class="col-md-1 mb-3">
+                        <label for="uf">UF</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                      </div>
+                      <div class="col-md-2 mb-3 mx-sm-4">
+						<label for="tipoLogradouro">Tipo de Logradouro</label>
+                        <div class="form-check">
+						
+                          <input class="form-check-input" type="radio" name="tipoLogradouro" id="urbano" value="u">
+                          <label class="form-check-label" for="urbano">Urbano</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="tipoLogradouro" id="rural" value="r">
+                          <label class="form-check-label" for="rural">Rural</label>
+                        </div>
+                      </div> 
+						
+					  <div class="form-group col-md-12">
+                          <label for="logradouro">Logradouro</label>
+                          <input type="text" class="form-control" id="logradouro" placeholder="Ex:">
+                      </div>
+						
+					  <div class="form-group col-md-1">
+                          <label for="numero">Nº</label>
+                          <input type="text" class="form-control" id="numero" placeholder="Ex: ">
+                      </div>
+                      <div class="form-group col-md-5 mx-sm-4">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" class="form-control" id="complemento" placeholder="Ex: ">
+                      </div>
+                      <div class="form-group col-md-5">
+                        <label for="nairro">Bairro</label>
+                        <input type="text" class="form-control" id="bairro" placeholder="Ex: ">
+                      </div> 						
+					</div>
+                </div>
+              </div>
+            </div>
+			
+			<div class="col-xl-12 col-md-12">
+              <div class="card border-left-warning">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                      <div class="col-md-5 mb-3">
+                        <label for="municipioNascimento">Município de Nascimento</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                      </div>
+					  <div class="col-md-3 mb-3 mx-sm-4">
+						<label for="certidaoNova">Certidão Nova</label>
+                        <div class="form-check">
+						
+                          <input class="form-check-input" type="radio" name="certidaoNova" id="certidaoSim" value="s">
+                          <label class="form-check-label" for="certidaoSim">Sim</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="certidaoNova" id="certidaoNao" value="n">
+                          <label class="form-check-label" for="certidaoNao">Não</label>
+                        </div>
+                      </div>
+					  <div class="form-group col-md-3">
+                        <label for="dtExpedicaoCertidao">Data de Expedição</label>
+                        <input type="text" class="form-control" id="dtExpedicaoCertidao" placeholder="Ex: DD/MM/AAAA">
+					  </div> 
+					 <label class="col-md-12"><b>Certidão Antiga</b></label>
+					 <div class="col-md-5 mb-3">
+                        <label for="municipioComarcar">Município da Comarca</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                      </div>
+                      <div class="col-md-2 mb-3 mx-sm-4">
+                        <label for="ufComarca">UF da Comarca</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="livro">Livro</label>
+                        <input type="text" class="form-control" id="livro" placeholder="Ex: ">
+                      </div>
+					  <div class="form-group col-md-1 mx-sm-4">
+                        <label for="folha">Folha</label>
+                        <input type="text" class="form-control" id="folha" placeholder="Ex: ">
+                      </div>
+					  
+					  <div class="form-group col-md-6">
+                        <label for="distritoCertidao">Distrito da Certidão</label>
+                        <input type="text" class="form-control" id="distritoCertidao" placeholder="Ex: ">
+                      </div>
+					  <div class="form-group col-md-5 mx-sm-4">
+                        <label for="nDaCertidao">Nº da Certidão</label>
+                        <input type="text" class="form-control" id="nDaCertidao" placeholder="Ex: ">
+                      </div>
+					  
+					  <div class="form-group col-md-12">
+                        <label for="matriculaCertidao"><b>Certidão Nova: </b>Matrícula</label>
+                        <input type="text" class="form-control" id="matriculaCertidao" placeholder="Ex: ">
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			
+			<div class="col-xl-12 col-md-12">
+              <div class="card border-left-danger">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                      <div class="form-group col-md-12">
+                        <label for="observacao">Anotações e Observações</label>
+                        <input type="text" class="form-control" id="observacao" placeholder="">
+                      </div>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+			
+			<div class="col-xl-12 col-md-12">
+              <div class="card border-left-success">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+					  <label class="col-xl-12 col-md-12"><b>Pessoas autorizadas para retirar a criança</b></label>
+                      <div class="form-group col-md-6">
+                        <label for="pessoaAutorizada1">Nome</label>
+                        <input type="text" class="form-control" id="pessoaAutorizada1" placeholder="Ex: ">
+                      </div>     
+					  <div class="form-group col-md-5 mx-sm-4">
+                        <label for="parentescoAutorizada1">Parentesco</label>
+                        <input type="text" class="form-control" id="parentescoAutorizada1" placeholder="Ex:">
+                      </div>  
+					  <div class="form-group col-md-6">
+                        <label for="pessoaAutorizada2">Nome</label>
+                        <input type="text" class="form-control" id="pessoaAutorizada2" placeholder="Ex: ">
+                      </div>     
+					  <div class="form-group col-md-5 mx-sm-4">
+                        <label for="parentescoAutorizada2">Parentesco</label>
+                        <input type="text" class="form-control" id="parentescoAutorizada2" placeholder="Ex:">
+                      </div>
+					  <div class="form-group col-md-6">
+                        <label for="pessoaAutorizada3">Nome</label>
+                        <input type="text" class="form-control" id="pessoaAutorizada3" placeholder="Ex: ">
+                      </div>     
+					  <div class="form-group col-md-5 mx-sm-4">
+                        <label for="parentescoAutorizada3">Parentesco</label>
+                        <input type="text" class="form-control" id="parentescoAutorizada3" placeholder="Ex:">
+                      </div>  
+					  <div class="form-group col-md-6">
+                        <label for="pessoaAutorizada4">Nome</label>
+                        <input type="text" class="form-control" id="pessoaAutorizada4" placeholder="Ex: ">
+                      </div>     
+					  <div class="form-group col-md-5 mx-sm-4">
+                        <label for="parentescoAutorizada4">Parentesco</label>
+                        <input type="text" class="form-control" id="parentescoAutorizada4" placeholder="Ex:">
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			
+			
+			<div class="col-xl-12 col-md-12">
+              <div class="card border-left-secondary">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+					  <label class="col-xl-12 col-md-12">Seu filho tem problemas: </label>
+                       <div class="col-md-2 mb-3">
+						<label for="defVisual">Visuais</label>
+                        <div class="form-check">
+						
+                          <input class="form-check-input" type="radio" name="defVisual" id="defVisualSim" value="s">
+                          <label class="form-check-label" for="defVisualSim">Sim</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="defVisual" id="defVisualNao" value="n">
+                          <label class="form-check-label" for="defVisualNao">Não</label>
+                        </div>
+                      </div>  
+					  
+					  <div class="col-md-2 mb-3 mx-sm-4">
+						<label for="defAuditiva">Auditivos</label>
+                        <div class="form-check">
+						
+                          <input class="form-check-input" type="radio" name="defAuditiva" id="defAuditivaSim" value="s">
+                          <label class="form-check-label" for="defAuditivaSim">Sim</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="defAuditiva" id="defAuditivaNao" value="n">
+                          <label class="form-check-label" for="defAuditivaNao">Não</label>
+                        </div>
+                      </div>
+					  
+					  <div class="col-md-2 mb-3">
+						<label for="defFisica">Físicos</label>
+                        <div class="form-check">
+						
+                          <input class="form-check-input" type="radio" name="defFisica" id="defFisicaSim" value="s">
+                          <label class="form-check-label" for="defFisicaSim">Sim</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="defFisica" id="defFisicaNao" value="n">
+                          <label class="form-check-label" for="defFisicaNao">Não</label>
+                        </div>
+                      </div>  
+					  
+					  <div class="col-md-2 mb-3 mx-sm-4">
+						<label for="defMotora">Motores</label>
+                        <div class="form-check">
+						
+                          <input class="form-check-input" type="radio" name="defMotora" id="defMotoraSim" value="s">
+                          <label class="form-check-label" for="defMotoraSim">Sim</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="defMotora" id="defMotoraNao" value="n">
+                          <label class="form-check-label" for="defMotoraNao">Não</label>
+                        </div>
+                      </div>
+					  
+					  <div class="col-md-2 mb-3">
+						<label for="defComportamental">Comportamentais</label>
+                        <div class="form-check">
+						
+                          <input class="form-check-input" type="radio" name="defComportamental" id="defComportamentalSim" value="s">
+                          <label class="form-check-label" for="defComportamentalSim">Sim</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="defComportamental" id="defComportamentalNao" value="n">
+                          <label class="form-check-label" for="defComportamentalNao">Não</label>
+                        </div>
+                      </div>  
+					  
+					  <div class="form-group col-md-12">
+                        <label for="observacaoDef">Algum outro problema que gostaria de mencionar?</label>
+                        <input type="text" class="form-control" id="observacaoDef" placeholder="">
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			
+			<div class="col-xl-12 col-md-12">
+              <div class="card border-left-primary">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+					  <label class="col-xl-12 col-md-12"><b>Contato de emergência</b></label>
+                      <div class="form-group col-md-6">
+                        <label for="emergencia1">Nome</label>
+                        <input type="text" class="form-control" id="emergencia1" placeholder="Ex: ">
+                      </div>     
+					  <div class="form-group col-md-5 mx-sm-4">
+                        <label for="telefoneEmergencia1">Telefone</label>
+                        <input type="text" class="form-control" id="telefoneEmergencia1" placeholder="Ex: (DDD) 00000-0000">
+                      </div>  
+					  <div class="form-group col-md-6">
+                        <label for="emergencia2">Nome</label>
+                        <input type="text" class="form-control" id="emergencia2" placeholder="Ex: ">
+                      </div>     
+					  <div class="form-group col-md-5 mx-sm-4">
+                        <label for="telefoneEmergencia2">Telefone</label>
+                        <input type="text" class="form-control" id="telefoneEmergencia2" placeholder="Ex: (DDD) 00000-0000">
+                      </div>
+					  <div class="form-group col-md-6">
+                        <label for="emergencia3">Nome</label>
+                        <input type="text" class="form-control" id="emergencia3" placeholder="Ex: ">
+                      </div>     
+					  <div class="form-group col-md-5 mx-sm-4">
+                        <label for="telefoneEmergencia3">Telefone</label>
+                        <input type="text" class="form-control" id="telefoneEmergencia3" placeholder="Ex: (DDD) 00000-0000">
+                      </div>
+					  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-12 col-md-12 mb-4">
+              <div class="card border-left-danger">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+					  <label class="col-xl-12 col-md-12"><b>Movimentação do aluno</b></label>
+					  <div class="form-group col-md-2">
+                        <label for="anoMov">Ano</label>
+                        <input type="text" class="form-control" id="anoMov" placeholder="Ex: 2016">
+                      </div>     
+					  <div class="form-group col-md-3 mx-sm-4">
+                        <label for="periodo">Período</label>
+                        <input type="text" class="form-control" id="periodo" placeholder="Ex: ">
+                      </div>
+					  <div class="form-group col-md-4">
+                        <label for="nivel">Nível</label>
+                        <input type="text" class="form-control" id="nivel" placeholder="Ex: ">
+                      </div>
+					  <div class="form-group col-md-1 mx-sm-4">
+                        <label for="idade">Idade</label>
+                        <input type="text" class="form-control" id="idade" placeholder="Ex: ">
+                      </div>
+					  <div class="form-group col-md-12">
+                        <label for="unidade">Unidade</label>
+                        <input type="text" class="form-control" id="unidade" placeholder="Ex: ">
+                      </div>
+					  <div class="col-md-2 mb-3">
+                        <label for="status">Status</label>
+                        <select class="form-control">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                      </div>            
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!--Quando cadastra aparece o botão Cadastrar, quando abre a página preenchida para alterar aparece o botão Salvar-->
+            <button type="submit" class="btn btn-success" id="cadastrar">Cadastrar</button>
+			<button type="submit" class="btn btn-info mx-sm-4" id="salvar">Salvar</button>
+          </form>
+		
+        </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright &copy; CECOI 2019</span>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Logout Modal-->
+
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/chart-area-demo.js"></script>
+  <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
